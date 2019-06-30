@@ -1,17 +1,28 @@
 {
   "name": "keep-notes",
-  "version": "1.0.0",
+  "version": "0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OLEKSII-DROZDIUK/cards-keep"
+  },
+  "author": "Oleksii Drozdiuk",
   "license": "ISC",
+  "bugs": {
+    "url": "git+https://github.com/OLEKSII-DROZDIUK/cards-keep/issues"
+  },
+  "homepage": "git+https://github.com/OLEKSII-DROZDIUK/cards-keep#readme",
   "dependencies": {
     "express": "^4.17.1",
     "body-parser": "^1.19.0",
     "ejs": "^2.6.2",
     "mongodb": "^3.2.7"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }

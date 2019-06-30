@@ -21,9 +21,7 @@ Email	samyner@ukr.net
 
 ## Список использованных технологий
 ### Сервис публикации приложений: Heroku
-[Приложение]()
-
-[Администрирование]()
+[Приложение](https://sleepy-tundra-70276.herokuapp.com/)
 
 ### База данных: MongoDB
 [Администрирование](https://cloud.mongodb.com/v2#/org/5cffb103014b761b070850d4)

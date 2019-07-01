@@ -1,21 +1,25 @@
 <div class="row">
     <% notes.forEach(function(note) { %>
-        <div class="card w-100 m-2 note shadow p-3 mb-5 bg-white rounded" data-id="<%= note._id %>">
+        <div class="card w-100 m-2 note shadow-sm p-3 mb-2 bg-white rounded" data-id="<%= note._id %>" style=" cursor: pointer">
             <div class="card-body">
-                <h5 class="card-title"><%= note.themeNote %></h5>
+                <h5 class="card-title" style="font-size: 1.5rem;"><%= note.themeNote %></h5>
                 <p class="card-text"><%= note.textNote %></p>
             </div>
         </div>
     <% }); %>
 
     <% lists.forEach(function(list) { %>
-        <div class="card w-100 m-2 list shadow p-3 mb-5 bg-white rounded" data-id="<%= list._id %>">
-            <div class="card-header">
+        <div class="card w-100 m-2 list shadow-sm p-3 mb-2 bg-white rounded" data-id="<%= list._id %>" style=" cursor: pointer">
+            <div class="card-header" style="font-size: 1.5rem;">
                 <%= list.themeList %>
             </div>
             <ul class="list-group list-group-flush">
                 <% list.itemsList.forEach(function(item) { %>
-                    <li class="list-group-item"><%= item.itemText %></li>
+                    <% if(item.itemChecked){ %>
+                        <li class="list-group-item text-danger" style="font-size: 1rem;"><del><%= item.itemText %></del></li>
+                    <% } else { %>
+                        <li class="list-group-item text-success"><%= item.itemText %></li>
+                    <% };%>
                 <% }); %>
             </ul>
         </div>
